@@ -1,0 +1,155 @@
+header{
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caixa{
+    position: relative; /**Poscionamento relativo dentro de uma caixa*/ 
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav{
+    position:absolute; /**Posicionamento absoluto em relação a pagina - você consegue posicionar onde quiser*/
+    top: 110px;
+    right: 0px;
+}
+
+nav li{
+    display:inline;
+    margin: 0 0 0 15px; /**cima, direita, baixo, esquerda*/
+    }
+
+nav a{
+    text-transform: uppercase;   /**letra maiúscula*/
+    color: #000000; /**Cor do texto*/
+    font-weight: bold; /**Negrito*/
+    font-size: 22px; /**Tamanho da letra*/
+    text-decoration: none; /**Tira decoração do texto, como por exemplo a linha de link*/
+}
+
+nav a:hover{ /** estilos para links */
+    color: #C78C19;
+    text-decoration: underline; /** colocar  a linha embaixo do texto */
+    transition: 0.5s; /** dar um tempo para aparecer as modificações */
+}
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li{
+    display:inline-block; /** alinhar os textos ou imagem - definir tamnho fixo para imagem ou texto - 
+    mantem o tamanho mas regulavel*/
+    text-align: center;
+    width: 30%;
+    vertical-align: top; /** alinhamento dos textos*/
+    margin: 0 1.5%; /** espaçamento externo */
+    padding: 30px 20px; /** espaçamento interno*/
+    box-sizing: border-box; /** Define que o tamanho do width sempre sera o valor passado independente do padding indicado */
+    border: 2px solid #000000; /** borda: tamanho estilo cor */
+    border-radius: 10px; /** arredondamento de bordas */
+}
+
+.produtos li:hover{ /** somente passar o mouse em cima*/
+    border-color: #C78C19;
+    transition: 0.5s;
+}
+
+.produtos li:active{ /** quando clicar com o cursor mudará o estilo */
+    border-color: #088C19;
+    transition: 0s; /** dar um tempo para aparecer as modificações */
+}
+
+.produtos li:hover h2{
+    font-size: 35px;
+    transition: 0.5s;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produtos-descricao{
+    font-size: 18px; 
+}
+
+.produtos-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url("../../img/bg.jpg"); /** imagem em plano de fundo - colocar sempre pequena e deixar o css ajustar*/
+    padding: 40px 0;
+}
+
+.copyright{
+    color: white;
+    font-size: 13px;
+    margin: 20px 0;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block; /*Utilizamos display:block para que o elemento ocupe a linha toda e jogue o proximo para baixo dele*/
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color:white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.1); /*SCALE -> Aumenta em uma porcentagem o elemento ou diminui */
+}
+
+table{
+    margin: 20px 0 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
